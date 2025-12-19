@@ -236,19 +236,166 @@ const Home = () => {
       </section>
 
       <style>{`
+        /* Tablet */
         @media (max-width: 1024px) {
+          section {
+            padding: 3rem 1.5rem !important;
+          }
+          
+          section > div {
+            padding: 0 2rem !important;
+          }
+          
           .grid-cols-2 {
             grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+          }
+          
+          .grid-cols-3 {
+            grid-template-columns: repeat(2, 1fr) !important;
+          }
+          
+          .grid-cols-4 {
+            grid-template-columns: repeat(3, 1fr) !important;
           }
           
           .slide-in {
             margin-top: 2rem;
           }
+          
+          .slide-in > div {
+            height: 400px !important;
+          }
+          
+          h1 {
+            font-size: 2.5rem !important;
+          }
+          
+          section[style*="padding: 6rem"] {
+            padding: 4rem 1.5rem !important;
+          }
         }
         
+        /* Mobile */
         @media (max-width: 768px) {
+          section {
+            padding: 2rem 1rem !important;
+          }
+          
+          section > div {
+            padding: 0 1rem !important;
+          }
+          
           h1 {
+            font-size: 1.75rem !important;
+            margin-bottom: 1rem !important;
+          }
+          
+          h2 {
+            font-size: 1.5rem !important;
+          }
+          
+          h3 {
+            font-size: 1.125rem !important;
+          }
+          
+          h4 {
+            font-size: 1rem !important;
+          }
+          
+          p {
+            font-size: 1rem !important;
+          }
+          
+          .grid-cols-3,
+          .grid-cols-4 {
+            grid-template-columns: 1fr !important;
+            gap: 1rem !important;
+          }
+          
+          .slide-in > div {
+            height: 300px !important;
+            border-radius: 12px !important;
+          }
+          
+          div[style*="display: flex"] {
+            flex-direction: column !important;
+            gap: 0.75rem !important;
+          }
+          
+          div[style*="gap: 3rem"] {
+            flex-direction: row !important;
+            gap: 1.5rem !important;
+            margin-top: 2rem !important;
+          }
+          
+          div[style*="fontSize: '2.5rem'"] {
             font-size: 2rem !important;
+          }
+          
+          .btn-lg {
+            padding: 0.75rem 1.5rem !important;
+            font-size: 0.875rem !important;
+          }
+          
+          .card {
+            padding: 1.25rem !important;
+          }
+          
+          section[style*="padding: 6rem"] {
+            padding: 3rem 1rem !important;
+          }
+          
+          .section-title h2 {
+            margin-bottom: 0.5rem !important;
+          }
+          
+          .section-title p {
+            font-size: 0.875rem !important;
+          }
+          
+          div[style*="width: '60px'"] {
+            width: 48px !important;
+            height: 48px !important;
+          }
+          
+          div[style*="width: '60px'"] svg {
+            width: 36px !important;
+            height: 36px !important;
+          }
+        }
+        
+        /* Extra Small Mobile */
+        @media (max-width: 480px) {
+          h1 {
+            font-size: 1.5rem !important;
+          }
+          
+          h2 {
+            font-size: 1.25rem !important;
+          }
+          
+          section > div {
+            padding: 0 0.5rem !important;
+          }
+          
+          .btn {
+            width: 100%;
+            justify-content: center;
+          }
+          
+          div[style*="gap: 1.5rem"] {
+            gap: 1rem !important;
+          }
+          
+          div[style*="fontSize: '2rem'"] {
+            font-size: 1.5rem !important;
+          }
+          
+          .card div[style*="position: absolute"] {
+            width: 32px !important;
+            height: 32px !important;
+            font-size: 0.875rem !important;
           }
         }
         
