@@ -70,7 +70,7 @@ const ProfileSetup = () => {
 
   return (
     <div style={{ minHeight: '100vh', background: '#F9FAFB' }}>
-      {/* Header with JobNest Logo */}
+      {/* Header  */}
       <header style={{
         background: 'white',
         borderBottom: '1px solid #E5E7EB',
@@ -169,7 +169,7 @@ const ProfileSetup = () => {
           {/* Step 1: Basic Info */}
           {currentStep === 1 && (
             <div>
-              {/* Profile Photo - Changed color to #0047AB */}
+              {/* Profile Photo  */}
               <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                 <div style={{
                   width: '120px',
@@ -381,7 +381,6 @@ const ProfileSetup = () => {
                 </p>
               </div>
 
-              {/* Skills - Made input box visible */}
               <div>
                 <h3 style={{ fontSize: '1.125rem', fontWeight: '700', marginBottom: '0.5rem' }}>Skills</h3>
                 <p style={{ fontSize: '0.875rem', color: '#6B7280', marginBottom: '1rem' }}>

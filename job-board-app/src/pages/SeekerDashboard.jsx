@@ -27,8 +27,6 @@ const SeekerDashboard = () => {
       navigate('/jobs')
     }
   }
-
-  // Extend mock jobs if needed
   const allJobs = mockJobs.length >= 10 ? mockJobs : [
     ...mockJobs,
     {
@@ -254,10 +252,10 @@ const SeekerDashboard = () => {
           </div>
         </header>
 
-        {/* Content Area - Full height */}
+        {/* Content Area  */}
         <div style={{ padding: '2rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '400px 1fr', gap: '2rem', flex: 1 }}>
-            {/* Left Column - Full height */}
+            {/* Left Column */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               {/* Strengthen Your Profile */}
               <div style={{
@@ -316,7 +314,7 @@ const SeekerDashboard = () => {
                 </button>
               </div>
 
-              {/* Jobs Recommended For You - Extended */}
+              {/* Jobs Recommended For You */}
               <div style={{
                 background: 'white',
                 padding: '1.5rem',
@@ -413,8 +411,6 @@ const SeekerDashboard = () => {
                 </div>
               </div>
             </div>
-
-            {/* Right Column - Full width and height */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               {/* Application Pipeline */}
               <div style={{
@@ -445,7 +441,7 @@ const SeekerDashboard = () => {
                 </div>
               </div>
 
-              {/* Saved Jobs - Extended with Apply Now button next to company name */}
+              {/* Saved Jobs  */}
               <div style={{
                 background: 'white',
                 padding: '2rem',
